@@ -1,0 +1,6 @@
+Public Sub ajout_ligne()
+Dim lig As Long
+For lig = Cells(Rows.Count, 1).End(xlUp).Row To 1 Step -1
+    Rows(lig + 1).Insert
+Next lig
+End Sub
